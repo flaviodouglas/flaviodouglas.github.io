@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Dynamic Pie: Modeling Compositional DVs Over Time</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/scrolling-nav.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Home</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#download">Download</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#publications">Publications</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contributors">Contributors</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="bg-primary text-white">
+    <div class="container text-center">
+	  	<img src="img/logo.002.png" alt="logo" style="width:60%">
+      <!-- <h1>dynsimpie</h1> -->
+      <p class="lead">A Strategy for Modeling Trade-Offs in Compositional Variables Over Time</p>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>About <strong>dynsimpie</strong></h2>
+          <p class="lead"><span style="font-weight: 700;">dynsimpie</span> is a suite of Stata<sup>&reg;</sup> commands for estimating, visualizing, and interpreting results from dynamic models of compositional dependent variables.
+            Think here of dependent variables composed of multiple continuous categories that vary over time, such as government budgets, sources of tax revenue, party vote share, or compositions of the income distribution.</p>
+
+          <p class="lead"> Scholars commonly collapse the many categories of these dependent variables into two distinct ones for ease of modeling. In <span style="font-weight: 700;">dynsimpie</span>, we allow for the estimation of all categories to occur simultaneously across time.
+          This makes it easy to observe the trade-offs experienced by all distinct categories upon changes in the explanatory variables.</p>
+          <br>
+          <br>
+          <p class="lead container text-center"><span style="font-weight: 500;">Two-Category Method <i>vs.</i> the </span></strong><span style="font-weight: 700;">dynsimpie</span> <span style="font-weight: 500;">Method</span></p>
+          <div class="text-center"><img src="img/compare_pies.001.png" alt="myimage" style="width:100%; margin-top:20px; margin-bottom:20px;"></div>
+          <ul>
+            <li class="lead">For a detailed description of the underlying "Dynamic Pie" method, check out this <a href="https://onlinelibrary.wiley.com/doi/full/10.1111/ajps.12204#accessDenialLayout" target="_blank"><i>American Journal of Political Science</i></a> article</li>
+            <li class="lead">You can also reference the corresponding <a href="https://www.stata-journal.com/article.html?article=st0448" target="_blank"><i>Stata Journal</i></a> article for a detailed description of the original <span style="font-weight: 700;">dynsimpie</span> command</li>
+            <li class="lead">Keep in mind that an update to <span style="font-weight: 700;">dynsimpie</span> (as well as a corresponding suite of commands) is under review at the <i>Stata Journal</i> in the Fall of 2019. Once published, the online article link will be posted here</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="download" class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Download</h2>
+          <p class="lead">To run <span style="font-weight: 700;">dynsimpie</span> in Stata<sup>&reg;</sup>, type <code class="codebackground">net sj 16-3 st0448</code> into Stata<sup>&reg;</sup>, or <code class="codebackground">findit dynsimpie</code></p>
+          <p class="lead">You will also need to download the following user-generated Stata<sup>&reg;</sup> programs:
+          <ul>
+            <li class="lead">Tomz, Whittenberg, and King's (2003) <span style="font-weight: 700;">clarify</span>, by typing <code class="codebackground">net install clarify</code></li>
+            <li class="lead">Jann's (2004) <span style="font-weight: 700;">coefplot</span>, by typing <code class="codebackground">net sj 15-1 gr0059_1</code></li>
+          </ul>
+          <img src="img/stata.png" alt="myimage" style="width:100%">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="publications">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Publications</h2>
+          <p class="lead">The following is a list of peer-reviewed articles published using <span style="font-weight: 700;">dynsimpie</span>. If you use <span style="font-weight: 700;">dynsimpie</span> in one of your papers too, let us know (fsouza <code class="codebackground">[AT]</code> tamu <code class="codebackground">[DOT]</code> edu) and we will add it to this list</p>
+          <ul>
+            <li class="lead">Philips, Andrew Q., Amanda Rutherford, and Guy D. Whitten. "The dynamic battle for pieces of pie—Modeling party support in multi-party nations." <i>Electoral Studies</i> 39 (2015): 264-274. <a href="https://www.sciencedirect.com/science/article/pii/S0261379415000645" target="_blank">Article</a></li>
+            <li class="lead">Philips, Andrew Q., Amanda Rutherford, and Guy D. Whitten. "Dynamic pie: A strategy for modeling trade‐offs in compositional variables over time." <i>American Journal of Political Science</i> 60.1 (2016): 268-283. <a href="https://onlinelibrary.wiley.com/doi/full/10.1111/ajps.12204#accessDenialLayout" target="_blank">Article</a> | <a href="https://onlinelibrary.wiley.com/action/downloadSupplement?doi=10.1111%2Fajps.12204&file=ajps12204-sup-0001-SupMat.pdf" target="_blank">Appendix</a> | <a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/MJSMJB" target="_blank">Replication Materials</a></li>
+            <li class="lead">Philips, Andrew Q., Amanda Rutherford, and Guy D. Whitten. "dynsimpie: A command to examine dynamic compositional dependent variables." <i>The Stata Journal</i> 16.3 (2016): 662-677. <a href="https://www.stata-journal.com/article.html?article=st0448" target="_blank">Article</a></li>
+            <li class="lead">Lipsmeyer, Christine S., Andrew Q. Philips, and Guy D. Whitten. "The effects of immigration and integration on European budgetary trade-offs." <i>Journal of European Public Policy</i> 24.6 (2017): 912-930. <a href="https://www.tandfonline.com/doi/full/10.1080/13501763.2017.1298657" target="_blank">Article</a></li>
+            <li class="lead">Lipsmeyer, Christine S., Andrew Q. Philips, Amanda Rutherford, and Guy D. Whitten. "Comparing Dynamic Pies: A Strategy for Modeling Compositional Variables in Time and Space." <i>Political Science Research and Methods</i> (2017): 1-18. <a href="https://www.cambridge.org/core/journals/political-science-research-and-methods/article/comparing-dynamic-pies-a-strategy-for-modeling-compositional-variables-in-time-and-space/A57D1B8406DC3B4C4008FF695C92E0D9" target="_blank">Article</a> | <a href="https://static.cambridge.org/content/id/urn:cambridge.org:id:article:S2049847017000395/resource/name/S2049847017000395sup001.pdf" target="_blank">Appendix</a> | <a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/XHW4CB" target="_blank">Replication Materials</a></li>
+            <li class="lead">Philips, Andrew Q., Flávio D. S. Souza, and Guy D. Whitten. "Globalization and comparative compositional inequality." <i>Political Science Research and Methods</i> (2019): 1-17. <a href="https://doi.org/10.1017/psrm.2019.25" target="_blank">Article</a> | <a href="https://static.cambridge.org/content/id/urn:cambridge.org:id:article:S2049847019000256/resource/name/S2049847019000256sup001.pdf" target="_blank">Appendix</a> | <a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/PC6CQC" target="_blank">Replication Materials</a></li>
+            <!-- <li class="lead"></li> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contributors" class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Contributors</h2>
+            <p class="lead container text-center"><span style="font-weight: 500;">Original Programmers</span></p>
+              <p class="lead" style="float: left; font-size: 1.1rem; text-align: center; width: 21.25%; margin-left: 13.125%; margin-right: 5%; margin-bottom: 2em;"><img src="img/profiles/profiles.002.png" style="width: 100%"><span style="font-weight: 500;"><a href="http://www.andyphilips.com" target="_blank">Dr. Andrew Philips</a></span><br>University of Colorado Boulder</p>
+              <p class="lead" style="float: left; font-size: 1.1rem; text-align: center; width: 21.25%; margin-right: 5%; margin-bottom: 1em;"><img src="img/profiles/profiles.003.png" style="width: 100%"><span style="font-weight: 500;"><a href="https://oneill.indiana.edu/faculty-research/directory/profiles/faculty/full-time/rutherford-amanda.html" target="_blank">Dr. Amanda Rutherford</a></span><br>Indiana University Bloomington</p>
+              <p class="lead" style="float: left; font-size: 1.1rem; text-align: center; width: 21.25%; margin-right: 13.125%; margin-bottom: 3.6em;"><img src="img/profiles/profiles.001.png" style="width: 100%"><span style="font-weight: 500;"><a href="https://pols.tamu.edu/about-us/faculty-directory/guy-d-whitten-professor/" target="_blank">Dr. Guy Whitten</a></span><br>Texas A&M University</p>
+
+            <p class="lead container text-center"><span style="font-weight: 500; width: 300%; margin-bottom: 1em;">Additional Programmers</span></p>
+              <p class="lead" style="float: left; font-size: 1.1rem; text-align: center; width: 21.25%; margin-left: 26.25%; margin-right: 5%; margin-bottom: 1em;"><img src="img/profiles/profiles.018.png" style="width: 100%"><span style="font-weight: 500;"><a href="https://www.yoosunjung.com" target="_blank">Yoo Sun Jung</a></span><br>Texas A&M University</p>
+              <p class="lead" style="float: left; font-size: 1.1rem; text-align: center; width: 21.25%; margin-right: 26.25%; margin-bottom: 2.1em;"><img src="img/profiles/profiles.004.png" style="width: 100%"><span style="font-weight: 500;"><a href="http://people.tamu.edu/~fsouza/" target="_blank">Flávio D. S. Souza</a></span><br>Texas A&M University</p>
+
+            <p class="lead container text-center"><span style="font-weight: 500; margin-bottom: 1em;">Other Major Contributors</span></p>
+            <p class="lead" style="float: left; font-size: 1.1rem; text-align: center; width: 21.25%; margin-right: 5%; margin-bottom: 1em;"><img src="img/profiles/profiles.008.png" style="width: 100%"><span style="font-weight: 500;"><a href="http://dcp.fflch.usp.br/index.php/docentes/lorena-barberia" target="_blank">Dr. Lorena Barberia</a></span><br>University of São Paulo</p>
+            <p class="lead" style="float: left; font-size: 1.1rem; text-align: center; width: 21.25%; margin-right: 5%; margin-bottom: 1em;"><img src="img/profiles/profiles.020.png" style="width: 100%"><span style="font-weight: 500; color: #007bff;"><a href="https://bv.fapesp.br/pt/pesquisador/696658/luiz-guilherme-roth-cantarelli/" target="_blank">Luiz Cantarelli</a></span><br>University of São Paulo</p>
+            <p class="lead" style="float: left; font-size: 1.1rem; text-align: center; width: 21.25%; margin-right: 5%; margin-bottom: 2.6em;"><img src="img/profiles/profiles.006.png" style="width: 100%"><span style="font-weight: 500; color: #007bff;"><a target="_blank">Spencer Goidel</a></span><br>Texas A&M University</p>
+            <p class="lead" style="float: left; font-size: 1.1rem; text-align: center; width: 21.25%; margin-right: 0%; margin-bottom: 2.6em;"><img src="img/profiles/profiles.016.png" style="width: 100%"><span style="font-weight: 500; color: #007bff;"><a target="_blank">Andrea Junqueira</a></span><br>Texas A&M University</p>
+
+            <p class="lead" style="float: left; font-size: 1.1rem; text-align: center; width: 21.25%; margin-right: 5%; margin-bottom: 2.6em;"><img src="img/profiles/profiles.009.png" style="width: 100%"><span style="font-weight: 500;"><a href="https://www.alikagalwala.com/research" target="_blank">Ali Kagalwala</a></span><br>Texas A&M University</p>
+            <p class="lead" style="float: left; font-size: 1.1rem; text-align: center; width: 21.25%; margin-right: 5%; margin-bottom: 1em;"><img src="img/profiles/profiles.017.png" style="width: 100%"><span style="font-weight: 500; color: #007bff;"><a target="_blank">Jonghoon Lee</a></span><br>Texas A&M University</p>
+            <p class="lead" style="float: left; font-size: 1.1rem; text-align: center; width: 21.25%; margin-right: 5%; margin-bottom: 2.6em;"><img src="img/profiles/profiles.019.png" style="width: 100%"><span style="font-weight: 500; color: #007bff;"><a href="https://bv.fapesp.br/en/pesquisador/695925/maria-leticia-claro-de-faria-oliveira/" target="_blank">Maria Letícia</a></span><br>University of São Paulo</p>
+            <p class="lead" style="float: left; font-size: 1.1rem; text-align: center; width: 21.25%; margin-right: 0%; margin-bottom: 1em;"><img src="img/profiles/profiles.007.png" style="width: 100%"><span style="font-weight: 500;"><a href="https://pols.tamu.edu/about-us/faculty-directory/christine-s-lipsmeyer-associate-professor/" target="_blank">Dr. Christine Lipsmeyer</a></span><br>Texas A&M University</p>
+
+            <p class="lead" style="float: left; font-size: 1.1rem; text-align: center; width: 21.25%; margin-right: 5%; margin-bottom: 2.6em;"><img src="img/profiles/profiles.005.png" style="width: 100%"><span style="font-weight: 500;"><a href="https://janicamagat.com" target="_blank">Janica Magat</a></span><br>Texas A&M University</p>
+            <p class="lead" style="float: left; font-size: 1.1rem; text-align: center; width: 21.25%; margin-right: 5%; margin-bottom: 1em;"><img src="img/profiles/profiles.010.png" style="width: 100%"><span style="font-weight: 500;"><a href="http://tamu.academia.edu/NathalieMendez" target="_blank">Nathalie Mendez</a></span><br>Texas A&M University</p>
+            <p class="lead" style="float: left; font-size: 1.1rem; text-align: center; width: 21.25%; margin-right: 5%; margin-bottom: 2.6em;"><img src="img/profiles/profiles.011.png" style="width: 100%"><span style="font-weight: 500;"><a href="https://www.linkedin.com/in/natália-moreira-67818980/?originalSubdomain=br" target="_blank">Natália Moreira</a></span><br>University of São Paulo</p>
+            <p class="lead" style="float: left; font-size: 1.1rem; text-align: center; width: 21.25%; margin-right: 0%; margin-bottom: 2.6em;"><img src="img/profiles/profiles.006.png" style="width: 100%"><span style="font-weight: 500; color: #007bff;"><a target="_blank">Thiago Moreira</a></span><br>Texas A&M University</p>
+
+            <p class="lead" style="float: left; font-size: 1.1rem; text-align: center; width: 21.25%; margin-right: 5%; margin-bottom: 1em;"><img src="img/profiles/profiles.014.png" style="width: 100%"><span style="font-weight: 500; color: #007bff;"><a target="_blank">Yeon Soo Park</a></span><br>Texas A&M University</p>
+            <p class="lead" style="float: left; font-size: 1.1rem; text-align: center; width: 21.25%; margin-right: 5%; margin-bottom: 1em;"><img src="img/profiles/profiles.012.png" style="width: 100%"><span style="font-weight: 500;"><a href="http://thiagosilvaphd.com" target="_blank">Dr. Thiago Silva</a></span><br>University of Mannheim</p>
+            <p class="lead" style="float: left; font-size: 1.1rem; text-align: center; width: 21.25%; margin-right: 5%; margin-bottom: 1em;"><img src="img/profiles/profiles.015.png" style="width: 100%"><span style="font-weight: 500;"><a href="https://keigotanabe.weebly.com" target="_blank">Keigo Tanabe</a></span><br>Texas A&M University</p>
+            <p class="lead" style="float: left; font-size: 1.1rem; text-align: center; width: 21.25%; margin-right: 0%; margin-bottom: 1em;"><img src="img/profiles/profiles.013.png" style="width: 100%"><span style="font-weight: 500;"><a href="http://web.missouri.edu/~williamslaro/" target="_blank">Dr. Laron Williams</a></span><br>University of Missouri Columbia</p>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; <span style="font-weight: 700;">dynsimpie</span> 2015-2019. Made using Start Bootstrap. For questions or comments regarding this page, contact fsouza <code>[AT]</code> tamu <code>[DOT]</code> edu.<br>
+      Stata<sup>&reg;</sup> is a registered trademark of StataCorp LLC.<br><br>
+      The opinions expressed on this page are those of its authors/contributors. They do not purport to reflect the opinions of Indiana University Bloomington, StataCorp LLC, Texas A&M University, University of Colorado Boulder, University of Mannheim, University of Missouri Columbia, or University of São Paulo.</p>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom JavaScript for this theme -->
+  <script src="js/scrolling-nav.js"></script>
+
+</body>
+
+</html>
